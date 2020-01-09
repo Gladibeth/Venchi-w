@@ -50,6 +50,9 @@
   border-radius: 5px;
   background: #9E9E9E;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 html,
 body {
