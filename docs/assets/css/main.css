@@ -1,44 +1,59 @@
 @font-face {
-  font-family: 'Avenir Next LT Pro';
-  src: url("../fonts/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Demi.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Ek Mukta';
+  src: url('../fonts/EkMukta-Light.woff2') format('woff2'),
+      url('../fonts/EkMukta-Light.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir Next LT Pro';
-  src: url("../fonts/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-family: 'Ek Mukta';
+  src: url('../fonts/EkMukta-ExtraLight.woff2') format('woff2'),
+      url('../fonts/EkMukta-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ek Mukta';
+  src: url('../fonts/EkMukta-SemiBold.woff2') format('woff2'),
+      url('../fonts/EkMukta-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ek Mukta';
+  src: url('../fonts/EkMukta-Medium.woff2') format('woff2'),
+      url('../fonts/EkMukta-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ek Mukta';
+  src: url('../fonts/EkMukta-ExtraBold.woff2') format('woff2'),
+      url('../fonts/EkMukta-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ek Mukta';
+  src: url('../fonts/EkMukta-Bold.woff2') format('woff2'),
+      url('../fonts/EkMukta-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir Next LT Pro';
-  src: url("../fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-family: 'Ek Mukta';
+  src: url('../fonts/EkMukta-Regular.woff2') format('woff2'),
+      url('../fonts/EkMukta-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Avenir Next LT Pro';
-  src: url("../fonts/AvenirNextLTPro-BoldCn.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-BoldCn.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Avenir Next LT Pro';
-  src: url("../fonts/AvenirNextLTPro-It.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-It.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Avenir Next LT Pro';
-  src: url("../fonts/AvenirNextLTPro-DemiCn.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-DemiCn.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -249,9 +264,9 @@ body {
 }
 
 .main-product__content .slick-next:before {
-  font-size: 25px;
+  font-size: 30px;
   color: #fff;
-  content: "\f054";
+  content: "\f105";
   font-family: 'FontAwesome';
   background-color: #9fca00;
 }
@@ -369,7 +384,7 @@ body {
 }
 
 body {
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Ek Mukta", sans-serif;
   overflow-x: hidden;
 }
 
@@ -465,7 +480,7 @@ button:focus {
   font-weight: 600;
   font-size: 18px;
   text-transform: capitalize;
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Ek Mukta", sans-serif;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -584,7 +599,7 @@ button:focus {
 
 .dropdown-menu li a {
   color: #000;
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Ek Mukta", sans-serif;
   font-size: 16px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -732,7 +747,7 @@ button:focus {
   font-size: 40px;
   font-weight: 700;
   color: #6b6b6b;
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Ek Mukta", sans-serif;
   position: relative; 
 }
 
@@ -749,30 +764,19 @@ button:focus {
   }
 }
 
-/* .main-general__title p:before {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 5px;
-  background-color: #d9c8c0;
-  bottom: -5px;
-  left: 40%;
-  border-radius: 50px;
-} */
-
 .main-general__title.main-general__title--product p:before {
   left: 35%;
 }
 
 .main-product__content {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px; */
   margin-top: 50px;
 }
 
 .main-product__item{
   padding: 10px;
+}
+.main-product__item:focus{
+  outline: none;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1164,7 +1168,7 @@ textarea::placeholder {
 
 .main-footer__info ul li a {
   color: #fff;
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Ek Mukta", sans-serif;
   text-decoration: none;
   font-size: 16px;
   display: flex;
@@ -1202,14 +1206,14 @@ textarea::placeholder {
 }
 
 .main-footer__copy p {
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Ek Mukta", sans-serif;
   color: #fff;
 }
 
 .main-footer__copy a {
   color: #fff;
   text-decoration: none;
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Ek Mukta", sans-serif;
   text-decoration: none;
   font-weight: 700;
   margin-right: 5px;
